@@ -29,14 +29,14 @@ jobs:
 
       - name: Restore
         run: |
-          dotnet restore ./src/ConsoleReader/ConsoleReader.csproj
-          dotnet restore ./src/ReplayWatcher/ReplayWatcher.csproj
+          dotnet restore ./src/ConsoleReader/ConsoleReader.csproj --force
+          dotnet restore ./src/ReplayWatcher/ReplayWatcher.csproj --force
 
       - name: Publish ConsoleReader EXE
-        run: dotnet publish ./src/ConsoleReader/ConsoleReader.csproj -c Release -r win-x64 --self-contained true -p:PublishSingleFile=true --no-restore -o ./dist/ConsoleReader
+        run: dotnet publish ./src/ConsoleReader/ConsoleReader.csproj -c Release -r win-x64 --self-contained true -p:PublishSingleFile=true -p:RestoreForce=true -o ./dist/ConsoleReader
 
       - name: Publish ReplayWatcher EXE
-        run: dotnet publish ./src/ReplayWatcher/ReplayWatcher.csproj -c Release -r win-x64 --self-contained true -p:PublishSingleFile=true --no-restore -o ./dist/ReplayWatcher
+        run: dotnet publish ./src/ReplayWatcher/ReplayWatcher.csproj -c Release -r win-x64 --self-contained true -p:PublishSingleFile=true -p:RestoreForce=true -o ./dist/ReplayWatcher
 
       - name: Upload EXE artifacts
         uses: actions/upload-artifact@v4
