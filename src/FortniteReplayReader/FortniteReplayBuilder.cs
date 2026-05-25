@@ -3,6 +3,7 @@ using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using FortniteReplayReader.Models;
 using FortniteReplayReader.Models.NetFieldExports;
+using FortniteReplayReader.Models.NetFieldExports.RPC;
 using FortniteReplayReader.Models.NetFieldExports.Weapons;
 
 namespace FortniteReplayReader;
@@ -12,6 +13,8 @@ namespace FortniteReplayReader;
 /// </summary>
 public class FortniteReplayBuilder
 {
+    private const string CrownGameplayCueTag = "GameplayCue.Athena.VictoryCrown.CrownWearer.Ambient";
+
     private readonly GameData GameData = new();
     private readonly MapData MapData = new();
     private readonly List<KillFeedEntry> KillFeed = new();
@@ -24,6 +27,7 @@ public class FortniteReplayBuilder
     /// Sometimes we receive a PlayerPawn but we havent received the PlayerState yet, so we dont want to processes these yet.
     /// </summary>
     private readonly Dictionary<uint, List<QueuedPlayerPawn>> _queuedPlayerPawns = new();
+    private readonly HashSet<uint> _pendingCrownPawnChannels = new();
 
     private readonly HashSet<uint> _onlySpectatingPlayers = new();
     private readonly Dictionary<uint, PlayerData> _players = new();
@@ -340,6 +344,11 @@ public class FortniteReplayBuilder
             }
         }
 
+        if (_pendingCrownPawnChannels.Remove(channelIndex))
+        {
+            playerState.HasCrown = true;
+        }
+
         playerState.Cosmetics.Character ??= pawn.Character?.Name;
         playerState.Cosmetics.BannerColorId ??= pawn.BannerColorId;
         playerState.Cosmetics.BannerIconId ??= pawn.BannerIconId;
@@ -388,6 +397,22 @@ public class FortniteReplayBuilder
             playerState.Locations.Add(newLocation);
         }
 
+    }
+
+    public void UpdateGameplayCue(uint channelIndex, GameplayCue gameplayCue)
+    {
+        if (!string.Equals(gameplayCue.GameplayCueTag?.TagName, CrownGameplayCueTag, System.StringComparison.Ordinal))
+        {
+            return;
+        }
+
+        if (TryGetPlayerDataFromPawn(channelIndex, out var playerData))
+        {
+            playerData.HasCrown = true;
+            return;
+        }
+
+        _pendingCrownPawnChannels.Add(channelIndex);
     }
 
     public void UpdateInventory(uint channelIndex, FortInventory fortInventory)
@@ -571,8 +596,4 @@ public class FortniteReplayBuilder
         // ignore PoiTagContainerTable since it is just a list of all POI...
     }
 
-    //public void UpdateGameplayCue(uint channelIndex, GameplayCue gameplayCue)
-    //{
-    //    // ¯\_(ツ)_/¯
-    //}
 }

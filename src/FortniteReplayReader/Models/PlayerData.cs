@@ -60,6 +60,7 @@ public class PlayerData
     public bool? HasThankedBusDriver { get; set; }
     public bool? IsUsingStreamerMode { get; set; }
     public bool? IsUsingAnonymousMode { get; set; }
+    public bool HasCrown { get; set; }
     public bool? Disconnected { get; internal set; }
 
     public uint? RebootCounter { get; set; }

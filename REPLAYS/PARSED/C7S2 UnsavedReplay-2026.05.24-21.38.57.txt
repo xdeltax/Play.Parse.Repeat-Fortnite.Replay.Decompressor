@@ -1,15 +1,15 @@
 File : C7S2 UnsavedReplay-2026.05.24-21.38.57
 Match: 2026-05-24T19:38:57.0510000Z; Duration: 19:06
-       98 Total Players
+       123 Total Players
        14 Real Players 
-       84 BOTs 
+       84 BOT Players
        25 NPCs
-       Hard Count: Real 14; BOT 84; NPC 25; Sum 123
+       1 Player with Crown
 Owner: xdx2k7 (634311A416164074906752232C0DC6D2)
        Rank#: #01
        killed 8 / knocked 1; 
-       Kill Feed: 7 killed / 1 knocked;
-       Accuracy 23.4%; Assists 0; Revives 0; Damage: 1505 Given; 765 Received
+       Accuracy 23,4%; Assists 0; Revives 0; Damage: 1505 Given; 765 Received
+       Owner has Crown
 Owner Killfeed:
    1. [02:47] killed!: [BOT ] Dessloch52     | Rank: 95
    2. [03:28] killed!: [BOT ] BoldPrediction | Rank: 80
@@ -21,7 +21,7 @@ Owner Killfeed:
    8. [19:37] knocked: [Real] Tanjirolovve   | Rank: 2
 
 Ranking
-#01 * xdx2k7             * OWNER * Kills:  8 | Level: 154 (154) | Platform: WIN
+#01 * xdx2k7 (Crown)     * OWNER * Kills:  8 | Level: 154 (154) | Platform: WIN
 #02 * Tanjirolovve       | Real  | Kills: 11 | Level: ??? ( 77) | Platform: WIN
 #03 * Ringer_Cat         | Real  | Kills:  3 | Level: 144 (144) | Platform: PS5
 #04 | MintElephant26     | BOT   | Kills:  1

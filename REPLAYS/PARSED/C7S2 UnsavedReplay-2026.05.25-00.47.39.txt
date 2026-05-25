@@ -1,15 +1,15 @@
 File : C7S2 UnsavedReplay-2026.05.25-00.47.39
 Match: 2026-05-24T22:47:39.0430000Z; Duration: 23:28
-       100 Total Players
+       125 Total Players
        16 Real Players 
-       84 BOTs 
+       84 BOT Players
        25 NPCs
-       Hard Count: Real 16; BOT 84; NPC 25; Sum 125
+       3 Players with Crown
 Owner: xdx2k7 (634311A416164074906752232C0DC6D2)
        Rank#: #01
        killed 8 / knocked 0; 
-       Kill Feed: 8 killed / 0 knocked;
-       Accuracy 16.0%; Assists 0; Revives 0; Damage: 1400 Given; 648 Received
+       Accuracy 16,0%; Assists 0; Revives 0; Damage: 1400 Given; 648 Received
+       Owner has Crown
 Owner Killfeed:
    1. [05:16] killed!: [BOT ] Питбуль1         | Rank: 59
    2. [06:44] killed!: [BOT ] lepszyodciebie1  | Rank: 41
@@ -21,104 +21,104 @@ Owner Killfeed:
    8. [24:30] killed!: [Real] riskinS          | Rank: 2
 
 Ranking
-#01 * xdx2k7               * OWNER * Kills:  8 | Level: 156 (156) | Platform: WIN
-#02 * riskinS              | Real  | Kills:  7 | Level: ??? ( 80) | Platform: WIN
-#03 * hayesoo_8            | Real  | Kills:  2 | Level: ??? (253) | Platform: PS5
-#04 * M8MerguezCharbon     | Real  | Kills:  4 | Level: ??? (106) | Platform: WIN
-#05 * Rekordmeister-13     | Real  | Kills:  4 | Level: 151 (151) | Platform: PS5
-#06 * ivhawa               | Real  | Kills:  5 | Level:  98 ( 98) | Platform: WIN
-#07 | PepperTaxi           | BOT   | Kills:  2
-#08 | ParmesanPeyniri24147 | BOT   | Kills:  2
-#09 * Alosh_963            | Real  | Kills:  4 | Level: ??? ( 37) | Platform: PS5
-#10 | BearPuns55           | BOT   | Kills:  3
-#11 | SassyJazzhands       | BOT   | Kills:  1
-#12 * nat-10-han           | Real  | Kills:  3 | Level: ??? (157) | Platform: PS5
-#13 | НямамДуми            | BOT   | Kills:  1
-#14 | FlawlessGame         | BOT   | Kills:  1
-#15 | Warsiren14           | BOT   | Kills:  1
-#16 * charlie_parkour2     | Real  | Kills:  2 | Level: ??? ( 42) | Platform: PSN
-#17 * gaffercake           | Real  | Kills:  5 | Level: ??? (119) | Platform: PS5
-#18 | SweetPenguin16       | BOT   | Kills:  3
-#19 | GetitGotitGood       | BOT   | Kills:  0
-#20 | BillyBrilliant23     | BOT   | Kills:  2
-#21 | DanIsHere50          | BOT   | Kills:  0
-#22 | OnetrickWonder64     | BOT   | Kills:  1
-#23 | Gizmoblock           | BOT   | Kills:  1
-#24 | Splut16159           | BOT   | Kills:  0
-#25 | MitDemMesser         | BOT   | Kills:  1
-#26 | Brummibernd          | BOT   | Kills:  2
-#27 | Gooddoggo80          | BOT   | Kills:  0
-#28 | FeasibleWeasel80     | BOT   | Kills:  1
-#29 | xXAnonymousXx30      | BOT   | Kills:  0
-#30 | Döner-macht-schöner  | BOT   | Kills:  1
-#31 | TinyMcLarge          | BOT   | Kills:  1
-#32 | BlipBlap53           | BOT   | Kills:  2
-#33 | Lizardfish49         | BOT   | Kills:  0
-#34 | UnderwaterSpy77      | BOT   | Kills:  1
-#35 * Ryanfoley54          | Real  | Kills:  2 | Level:  64 ( 64) | Platform: PS5
-#36 | Stinger85            | BOT   | Kills:  1
-#37 | NocturnePatrol       | BOT   | Kills:  2
-#38 | CantTouchMe67        | BOT   | Kills:  0
-#39 | Butinator6582        | BOT   | Kills:  2
-#40 | GreatGriffin28       | BOT   | Kills:  0
-#41 | lepszyodciebie1      | BOT   | Kills:  1
-#42 | GnomeRider16         | BOT   | Kills:  0
-#43 | wektor77             | BOT   | Kills:  1
-#44 | MrKompetenz24728     | BOT   | Kills:  0
-#45 | McLawnmower91        | BOT   | Kills:  2
-#46 | PirateWizard22       | BOT   | Kills:  1
-#47 | Glamour67            | BOT   | Kills:  0
-#48 | ScorpionOne50        | BOT   | Kills:  0
-#49 | DrumGunnar           | BOT   | Kills:  0
-#50 | MangeurDePommes13    | BOT   | Kills:  0
-#51 | PaLyANChO            | BOT   | Kills:  1
-#52 | 360NoScoper29718     | BOT   | Kills:  0
-#53 * Zyklonya             | Real  | Kills:  3 | Level: ??? ( 91) | Platform: PS5
-#54 | ManiacMeerkat49      | BOT   | Kills:  0
-#55 | Rrrrumba98           | BOT   | Kills:  0
-#56 | KralKobra1235        | BOT   | Kills:  0
-#57 | FootballDay          | BOT   | Kills:  1
-#58 | voitodiego           | BOT   | Kills:  0
-#59 | Питбуль1             | BOT   | Kills:  1
-#60 | Waschbrettbauch01    | BOT   | Kills:  0
-#61 | BlinkImGone44        | BOT   | Kills:  0
-#62 | Juxtapose48          | BOT   | Kills:  0
-#63 | LetsBePals23         | BOT   | Kills:  0
-#64 | CarnavalPop          | BOT   | Kills:  0
-#65 | Reaper1487           | BOT   | Kills:  0
-#66 | jositoamnesio        | BOT   | Kills:  0
-#67 | ThisSideUp87         | BOT   | Kills:  0
-#68 | 2sweaty23            | BOT   | Kills:  1
-#69 | SeguraMeuHeadshot    | BOT   | Kills:  0
-#70 | TroubledTaco45       | BOT   | Kills:  0
-#71 | GlitterMantis        | BOT   | Kills:  1
-#72 | SpeedSparrow47       | BOT   | Kills:  0
-#73 | Fen0Men02            | BOT   | Kills:  0
-#74 | Steeeve89002         | BOT   | Kills:  0
-#75 | Playmaker365         | BOT   | Kills:  0
-#76 * itsfearless854       | Real  | Kills:  0 | Level: ??? (137) | Platform: XBL
-#77 | ToxicTropic          | BOT   | Kills:  1
-#78 | SomethingFishy3      | BOT   | Kills:  0
-#79 | Manwell65            | BOT   | Kills:  0
-#80 | IronMade20           | BOT   | Kills:  0
-#81 | SquadUp98            | BOT   | Kills:  1
-#82 | HubcapDonuts         | BOT   | Kills:  0
-#83 | ForlornMorning       | BOT   | Kills:  0
-#84 | SalsaPants36         | BOT   | Kills:  0
-#85 | BobbumMan            | BOT   | Kills:  1
-#86 | BumbleB3ar           | BOT   | Kills:  0
-#87 | SniperzX18623        | BOT   | Kills:  0
-#88 | Thimonnyer14         | BOT   | Kills:  0
-#89 | SniperCharlie92      | BOT   | Kills:  0
-#90 | M_I_E_T_3_K          | BOT   | Kills:  0
-#91 | КозакМамай           | BOT   | Kills:  0
-#92 | DestruyeBravas       | BOT   | Kills:  0
-#93 | 4tnite4ever15        | BOT   | Kills:  0
-#94 | DJHoneybun           | BOT   | Kills:  0
-#95 | GlowBeetle41         | BOT   | Kills:  0
-#96 | latuaGiulietta       | BOT   | Kills:  0
-#97 | Bro2Max              | BOT   | Kills:  0
-#98 * empathic_carpet5     | Real  | Kills:  0 | Level: 122 (122) | Platform: PS5
-#99 * Xxdevilghost2xx      | Real  | Kills:  0 | Level: ??? (???) | Platform: XBL
-#100 * private-dome12       | Real  | Kills:  0 | Level: 406 (406) | Platform: PS5
+#01 * xdx2k7 (Crown)           * OWNER * Kills:  8 | Level: 156 (156) | Platform: WIN
+#02 * riskinS                  | Real  | Kills:  7 | Level: ??? ( 80) | Platform: WIN
+#03 * hayesoo_8                | Real  | Kills:  2 | Level: ??? (253) | Platform: PS5
+#04 * M8MerguezCharbon         | Real  | Kills:  4 | Level: ??? (106) | Platform: WIN
+#05 * Rekordmeister-13 (Crown) | Real  | Kills:  4 | Level: 151 (151) | Platform: PS5
+#06 * ivhawa                   | Real  | Kills:  5 | Level:  98 ( 98) | Platform: WIN
+#07 | PepperTaxi               | BOT   | Kills:  2
+#08 | ParmesanPeyniri24147     | BOT   | Kills:  2
+#09 * Alosh_963                | Real  | Kills:  4 | Level: ??? ( 37) | Platform: PS5
+#10 | BearPuns55               | BOT   | Kills:  3
+#11 | SassyJazzhands           | BOT   | Kills:  1
+#12 * nat-10-han               | Real  | Kills:  3 | Level: ??? (157) | Platform: PS5
+#13 | НямамДуми                | BOT   | Kills:  1
+#14 | FlawlessGame             | BOT   | Kills:  1
+#15 | Warsiren14               | BOT   | Kills:  1
+#16 * charlie_parkour2 (Crown) | Real  | Kills:  2 | Level: ??? ( 42) | Platform: PSN
+#17 * gaffercake               | Real  | Kills:  5 | Level: ??? (119) | Platform: PS5
+#18 | SweetPenguin16           | BOT   | Kills:  3
+#19 | GetitGotitGood           | BOT   | Kills:  0
+#20 | BillyBrilliant23         | BOT   | Kills:  2
+#21 | DanIsHere50              | BOT   | Kills:  0
+#22 | OnetrickWonder64         | BOT   | Kills:  1
+#23 | Gizmoblock               | BOT   | Kills:  1
+#24 | Splut16159               | BOT   | Kills:  0
+#25 | MitDemMesser             | BOT   | Kills:  1
+#26 | Brummibernd              | BOT   | Kills:  2
+#27 | Gooddoggo80              | BOT   | Kills:  0
+#28 | FeasibleWeasel80         | BOT   | Kills:  1
+#29 | xXAnonymousXx30          | BOT   | Kills:  0
+#30 | Döner-macht-schöner      | BOT   | Kills:  1
+#31 | TinyMcLarge              | BOT   | Kills:  1
+#32 | BlipBlap53               | BOT   | Kills:  2
+#33 | Lizardfish49             | BOT   | Kills:  0
+#34 | UnderwaterSpy77          | BOT   | Kills:  1
+#35 * Ryanfoley54              | Real  | Kills:  2 | Level:  64 ( 64) | Platform: PS5
+#36 | Stinger85                | BOT   | Kills:  1
+#37 | NocturnePatrol           | BOT   | Kills:  2
+#38 | CantTouchMe67            | BOT   | Kills:  0
+#39 | Butinator6582            | BOT   | Kills:  2
+#40 | GreatGriffin28           | BOT   | Kills:  0
+#41 | lepszyodciebie1          | BOT   | Kills:  1
+#42 | GnomeRider16             | BOT   | Kills:  0
+#43 | wektor77                 | BOT   | Kills:  1
+#44 | MrKompetenz24728         | BOT   | Kills:  0
+#45 | McLawnmower91            | BOT   | Kills:  2
+#46 | PirateWizard22           | BOT   | Kills:  1
+#47 | Glamour67                | BOT   | Kills:  0
+#48 | ScorpionOne50            | BOT   | Kills:  0
+#49 | DrumGunnar               | BOT   | Kills:  0
+#50 | MangeurDePommes13        | BOT   | Kills:  0
+#51 | PaLyANChO                | BOT   | Kills:  1
+#52 | 360NoScoper29718         | BOT   | Kills:  0
+#53 * Zyklonya                 | Real  | Kills:  3 | Level: ??? ( 91) | Platform: PS5
+#54 | ManiacMeerkat49          | BOT   | Kills:  0
+#55 | Rrrrumba98               | BOT   | Kills:  0
+#56 | KralKobra1235            | BOT   | Kills:  0
+#57 | FootballDay              | BOT   | Kills:  1
+#58 | voitodiego               | BOT   | Kills:  0
+#59 | Питбуль1                 | BOT   | Kills:  1
+#60 | Waschbrettbauch01        | BOT   | Kills:  0
+#61 | BlinkImGone44            | BOT   | Kills:  0
+#62 | Juxtapose48              | BOT   | Kills:  0
+#63 | LetsBePals23             | BOT   | Kills:  0
+#64 | CarnavalPop              | BOT   | Kills:  0
+#65 | Reaper1487               | BOT   | Kills:  0
+#66 | jositoamnesio            | BOT   | Kills:  0
+#67 | ThisSideUp87             | BOT   | Kills:  0
+#68 | 2sweaty23                | BOT   | Kills:  1
+#69 | SeguraMeuHeadshot        | BOT   | Kills:  0
+#70 | TroubledTaco45           | BOT   | Kills:  0
+#71 | GlitterMantis            | BOT   | Kills:  1
+#72 | SpeedSparrow47           | BOT   | Kills:  0
+#73 | Fen0Men02                | BOT   | Kills:  0
+#74 | Steeeve89002             | BOT   | Kills:  0
+#75 | Playmaker365             | BOT   | Kills:  0
+#76 * itsfearless854           | Real  | Kills:  0 | Level: ??? (137) | Platform: XBL
+#77 | ToxicTropic              | BOT   | Kills:  1
+#78 | SomethingFishy3          | BOT   | Kills:  0
+#79 | Manwell65                | BOT   | Kills:  0
+#80 | IronMade20               | BOT   | Kills:  0
+#81 | SquadUp98                | BOT   | Kills:  1
+#82 | HubcapDonuts             | BOT   | Kills:  0
+#83 | ForlornMorning           | BOT   | Kills:  0
+#84 | SalsaPants36             | BOT   | Kills:  0
+#85 | BobbumMan                | BOT   | Kills:  1
+#86 | BumbleB3ar               | BOT   | Kills:  0
+#87 | SniperzX18623            | BOT   | Kills:  0
+#88 | Thimonnyer14             | BOT   | Kills:  0
+#89 | SniperCharlie92          | BOT   | Kills:  0
+#90 | M_I_E_T_3_K              | BOT   | Kills:  0
+#91 | КозакМамай               | BOT   | Kills:  0
+#92 | DestruyeBravas           | BOT   | Kills:  0
+#93 | 4tnite4ever15            | BOT   | Kills:  0
+#94 | DJHoneybun               | BOT   | Kills:  0
+#95 | GlowBeetle41             | BOT   | Kills:  0
+#96 | latuaGiulietta           | BOT   | Kills:  0
+#97 | Bro2Max                  | BOT   | Kills:  0
+#98 * empathic_carpet5         | Real  | Kills:  0 | Level: 122 (122) | Platform: PS5
+#99 * Xxdevilghost2xx          | Real  | Kills:  0 | Level: ??? (???) | Platform: XBL
+#100 * private-dome12           | Real  | Kills:  0 | Level: 406 (406) | Platform: PS5
 

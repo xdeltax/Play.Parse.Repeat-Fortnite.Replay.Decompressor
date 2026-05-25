@@ -147,8 +147,9 @@ internal static class ReplayAnalyzer
         var realPlayers = players.Count(p => !p.IsBot);
         var botPlayers = players.Count(p => p.IsBot && !string.IsNullOrWhiteSpace(p.BotId));
         var npcPlayers = players.Count(p => p.IsBot && string.IsNullOrWhiteSpace(p.BotId));
+        var crownPlayers = players.Count(p => !p.IsBot && p.HasCrown);
         var hardSum = realPlayers + botPlayers + npcPlayers;
-        var totalPlayers = (uint)(realPlayers + botPlayers);
+        var totalPlayers = hardSum;
         static string FormatSummaryLine(string label, string value) => $"{label} {value}";
 
         var lines = new List<string>
@@ -157,9 +158,9 @@ internal static class ReplayAnalyzer
             FormatSummaryLine("Match:", $"{ToIsoOrUnknown(replay.Info?.Timestamp)}; Duration: {FormatDurationMmSs(durationSeconds)}"),
             $"       {totalPlayers} Total Players",
             $"       {realPlayers} Real Players ",
-            $"       {botPlayers} BOTs ",
+            $"       {botPlayers} BOT Players",
             $"       {npcPlayers} NPCs",
-            $"       Hard Count: Real {realPlayers}; BOT {botPlayers}; NPC {npcPlayers}; Sum {hardSum}"
+            $"       {crownPlayers} {(crownPlayers == 1 ? "Player" : "Players")} with Crown"
         };
 
         if (owner is null)
@@ -217,6 +218,10 @@ internal static class ReplayAnalyzer
             }
 
             lines.Add($"       Accuracy {(ownerAccuracyPercent.HasValue ? $"{ownerAccuracyPercent.Value:F1}%" : "unknown")}; Assists {FormatCompactMetric(ownerAssists)}; Revives {FormatCompactMetric(ownerRevives)}; Damage: {(ownerDamageGiven.HasValue ? ownerDamageGiven.Value.ToString() : "unknown")} Given; {(ownerDamageReceived.HasValue ? ownerDamageReceived.Value.ToString() : "unknown")} Received");
+            if (owner.HasCrown)
+            {
+                lines.Add("       Owner has Crown");
+            }
 
             lines.Add("Owner Killfeed:");
 
@@ -236,7 +241,7 @@ internal static class ReplayAnalyzer
                         }
 
                         return victimPlayer is not null
-                            ? GetPlayerDisplayName(victimPlayer)
+                            ? FormatDisplayNameWithCrown(victimPlayer)
                             : (!string.IsNullOrWhiteSpace(entry.PlayerName)
                                 ? entry.PlayerName
                                 : (entry.PlayerId.HasValue ? $"PlayerID:{entry.PlayerId.Value}" : "unknown"));
@@ -261,7 +266,7 @@ internal static class ReplayAnalyzer
                     }
 
                     var victim = victimPlayer is not null
-                        ? GetPlayerDisplayName(victimPlayer)
+                        ? FormatDisplayNameWithCrown(victimPlayer)
                         : (!string.IsNullOrWhiteSpace(entry.PlayerName)
                             ? entry.PlayerName
                             : (entry.PlayerId.HasValue ? $"PlayerID:{entry.PlayerId.Value}" : "unknown"));
@@ -284,11 +289,11 @@ internal static class ReplayAnalyzer
         else
         {
             var allRankingPlayers = rankedPlayers.Concat(unrankedAliveRealPlayers).ToList();
-            var idWidth = Math.Max(12, allRankingPlayers.Max(player => GetPlayerDisplayName(player).Length));
+            var idWidth = Math.Max(12, allRankingPlayers.Max(player => FormatDisplayNameWithCrown(player).Length));
 
             foreach (var player in unrankedAliveRealPlayers)
             {
-                var baseDisplayId = GetPlayerDisplayName(player);
+                var baseDisplayId = FormatDisplayNameWithCrown(player);
                 var kills = player.Kills ?? 0;
                 var level = FormatLevel(player.Level);
                 var seasonLevel = FormatLevel(player.SeasonLevelUIDisplay);
@@ -299,7 +304,7 @@ internal static class ReplayAnalyzer
 
             foreach (var player in rankedPlayers)
             {
-                var baseDisplayId = GetPlayerDisplayName(player);
+                var baseDisplayId = FormatDisplayNameWithCrown(player);
                 var kills = player.Kills ?? 0;
                 string line;
 
@@ -370,6 +375,12 @@ internal static class ReplayAnalyzer
         }
 
         return "unknown";
+    }
+
+    private static string FormatDisplayNameWithCrown(PlayerData? player)
+    {
+        var displayName = GetPlayerDisplayName(player);
+        return player?.HasCrown == true ? $"{displayName} (Crown)" : displayName;
     }
 
     private static string GetKillfeedTag(PlayerData? player)

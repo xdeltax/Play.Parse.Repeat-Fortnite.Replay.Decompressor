@@ -8,6 +8,7 @@ using FortniteReplayReader.Models;
 using FortniteReplayReader.Models.Enums;
 using FortniteReplayReader.Models.Events;
 using FortniteReplayReader.Models.NetFieldExports;
+using FortniteReplayReader.Models.NetFieldExports.RPC;
 using FortniteReplayReader.Models.NetFieldExports.Weapons;
 using Microsoft.Extensions.Logging;
 using Unreal.Core;
@@ -134,9 +135,9 @@ public class ReplayReader : Unreal.Core.ReplayReader<FortniteReplay>
             case FortPoiManager poimanager:
                 Builder.UpdatePoiManager(poimanager);
                 break;
-            //case GameplayCue gameplayCue:
-            //    Builder.UpdateGameplayCue(channelIndex, gameplayCue);
-            //    break;
+            case GameplayCue gameplayCue:
+                Builder.UpdateGameplayCue(channelIndex, gameplayCue);
+                break;
             case BaseWeapon weapon:
                 Builder.UpdateWeapon(channelIndex, weapon);
                 break;

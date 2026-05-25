@@ -1,34 +1,34 @@
 File : C7S2 UnsavedReplay-2026.05.17-20.56.55
 Match: 2026-05-17T18:56:55.9800000Z; Duration: 17:44
-       99 Total Players
+       124 Total Players
        15 Real Players 
-       84 BOTs 
+       84 BOT Players
        25 NPCs
-       Hard Count: Real 15; BOT 84; NPC 25; Sum 124
+       2 Players with Crown
 Owner: xdx2k7 (634311A416164074906752232C0DC6D2)
        Rank#: #01
        killed 10 / knocked 1; 
-       Kill Feed: 9 killed / 1 knocked;
-       Accuracy 31.9%; Assists 0; Revives 0; Damage: 1457 Given; 280 Received
+       Accuracy 31,9%; Assists 0; Revives 0; Damage: 1457 Given; 280 Received
+       Owner has Crown
 Owner Killfeed:
-   1. [05:30] killed!: [BOT ] WowerZower     | Rank: 70
-   2. [07:22] killed!: [BOT ] GlassCannister | Rank: 45
-   3. [08:09] killed!: [BOT ] TheFlopperKing | Rank: 41
-   4. [08:54] killed!: [BOT ] DarioAvaro     | Rank: 33
-   5. [09:19] killed!: [BOT ] IHaveFullMetal | Rank: 27
-   6. [10:31] killed!: [BOT ] CopperBottom43 | Rank: 22
-   7. [10:41] killed!: [BOT ] Mati9915429    | Rank: 19
-   8. [12:07] killed!: [BOT ] xXxjmarcinxXx  | Rank: 10
-   9. [14:18] knocked: [Real] m.c.hastings   | Rank: 6
-  10. [19:31] killed!: [Real] winter_ricskoo | Rank: 2
+   1. [05:30] killed!: [BOT ] WowerZower           | Rank: 70
+   2. [07:22] killed!: [BOT ] GlassCannister       | Rank: 45
+   3. [08:09] killed!: [BOT ] TheFlopperKing       | Rank: 41
+   4. [08:54] killed!: [BOT ] DarioAvaro           | Rank: 33
+   5. [09:19] killed!: [BOT ] IHaveFullMetal       | Rank: 27
+   6. [10:31] killed!: [BOT ] CopperBottom43       | Rank: 22
+   7. [10:41] killed!: [BOT ] Mati9915429          | Rank: 19
+   8. [12:07] killed!: [BOT ] xXxjmarcinxXx        | Rank: 10
+   9. [14:18] knocked: [Real] m.c.hastings (Crown) | Rank: 6
+  10. [19:31] killed!: [Real] winter_ricskoo       | Rank: 2
 
 Ranking
-#01 * xdx2k7                * OWNER * Kills: 10 | Level: 150 (150) | Platform: WIN
+#01 * xdx2k7 (Crown)        * OWNER * Kills: 10 | Level: 150 (150) | Platform: WIN
 #02 * winter_ricskoo        | Real  | Kills: 10 | Level:  78 ( 78) | Platform: PS5
 #03 * Lord_Elender          | Real  | Kills:  4 | Level: ??? (???) | Platform: PSN
 #04 * Stuey18959            | Real  | Kills:  6 | Level:  71 ( 71) | Platform: XSX
 #05 * Samu_439ns            | Real  | Kills:  3 | Level:  68 ( 68) | Platform: PS5
-#06 * m.c.hastings          | Real  | Kills:  3 | Level: ??? (174) | Platform: SWT2
+#06 * m.c.hastings (Crown)  | Real  | Kills:  3 | Level: ??? (174) | Platform: SWT2
 #07 | AtTheBeach321         | BOT   | Kills:  0
 #08 | ZeroM4nqueke          | BOT   | Kills:  1
 #09 | 4tnite4ever15         | BOT   | Kills:  2
