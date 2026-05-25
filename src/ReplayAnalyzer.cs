@@ -138,11 +138,11 @@ internal static class ReplayAnalyzer
 
         var owner = players.FirstOrDefault(p => p.IsReplayOwner);
         var ownerById = owner?.Id;
-        var ownerKills = ownerById.HasValue
+        var ownerFeedEvents = ownerById.HasValue
             ? killFeed.Where(k => k.FinisherOrDowner == ownerById.Value && !k.IsRevived).ToList()
             : new List<KillFeedEntry>();
-        var ownerKnocks = ownerKills.Count(k => k.IsDowned);
-        var ownerFinalKills = ownerKills.Count - ownerKnocks;
+        var ownerKnocks = ownerFeedEvents.Count(k => k.IsDowned);
+        var ownerRankingKills = owner?.Kills ?? 0;
         var durationSeconds = replay.Info?.LengthInMs > 0 ? replay.Info.LengthInMs / 1000.0 : 0;
         var realPlayers = players.Count(p => !p.IsBot);
         var botPlayers = players.Count(p => p.IsBot && !string.IsNullOrWhiteSpace(p.BotId));
@@ -185,7 +185,7 @@ internal static class ReplayAnalyzer
             var ownerEpicId = string.IsNullOrWhiteSpace(owner.PlayerId) ? "unknown" : owner.PlayerId;
             lines.Add($"Owner: {ownerDisplayId} ({ownerEpicId})");
             lines.Add($"       Rank#: {ownerRank}");
-            lines.Add($"       killed {ownerFinalKills} / knocked {ownerKnocks}; ");
+            lines.Add($"       killed {ownerRankingKills} / knocked {ownerKnocks}; ");
 
             if (owner.DeathTimeDouble.HasValue || owner.DeathTime.HasValue)
             {
@@ -220,13 +220,13 @@ internal static class ReplayAnalyzer
 
             lines.Add("Owner Killfeed:");
 
-            if (ownerKills.Count == 0)
+            if (ownerFeedEvents.Count == 0)
             {
                 lines.Add("  (no kills)");
             }
             else
             {
-                var killfeedVictimWidth = ownerKills
+                var killfeedVictimWidth = ownerFeedEvents
                     .Select(entry =>
                     {
                         PlayerData? victimPlayer = null;
@@ -244,9 +244,9 @@ internal static class ReplayAnalyzer
                     .DefaultIfEmpty("unknown")
                     .Max(name => name.Length);
 
-                for (var i = 0; i < ownerKills.Count; i++)
+                for (var i = 0; i < ownerFeedEvents.Count; i++)
                 {
-                    var entry = ownerKills[i];
+                    var entry = ownerFeedEvents[i];
                     var tag = entry.PlayerIsBot ? "BOT " : "Real";
                     var action = entry.IsDowned ? "knocked" : "killed!";
                     PlayerData? victimPlayer = null;

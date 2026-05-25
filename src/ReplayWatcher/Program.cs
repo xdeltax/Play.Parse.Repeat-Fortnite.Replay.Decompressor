@@ -35,7 +35,7 @@ internal static class Program
             cts.Cancel();
         };
 
-        RenderStatusBar(lastProcessedResult);
+        PrintShortcutHint(lastProcessedResult);
 
         while (!cts.IsCancellationRequested)
         {
@@ -86,8 +86,6 @@ internal static class Program
             {
                 Console.WriteLine($"[ERROR] Scan failed: {ex.Message}");
             }
-
-            RenderStatusBar(lastProcessedResult);
 
             try
             {
@@ -321,6 +319,7 @@ internal static class Program
         if (lastProcessedResult is null)
         {
             Console.WriteLine($"[{DateTime.Now:yyyy-MM-dd HH:mm:ss}] D pressed: no replay has been processed yet.");
+            PrintShortcutHint(lastProcessedResult);
             return;
         }
 
@@ -328,6 +327,7 @@ internal static class Program
         Console.WriteLine($"[{DateTime.Now:yyyy-MM-dd HH:mm:ss}] D pressed: showing details (including ranking) for {lastProcessedResult.ReplayFilePath}");
         Console.WriteLine(lastProcessedResult.AnalysisText);
         Console.WriteLine();
+        PrintShortcutHint(lastProcessedResult);
     }
 
     private static bool CanReadReplayFile(string filePath)
@@ -366,6 +366,7 @@ internal static class Program
             var consoleText = showDetails ? result.AnalysisText : GetSummaryAndOwnerOnly(result.AnalysisText);
             Console.WriteLine(consoleText);
             Console.WriteLine();
+            PrintShortcutHint(lastProcessedResult);
 
             processed[replayFile] = signature;
         }
@@ -381,11 +382,16 @@ internal static class Program
 
     private static string GetSummaryAndOwnerOnly(string fullText)
     {
-        const string rankingHeader = "Ranking (top = best rank / last survivor)";
+        var rankingHeader = $"{Environment.NewLine}Ranking";
         var index = fullText.IndexOf(rankingHeader, StringComparison.Ordinal);
         if (index < 0)
         {
-            return fullText;
+            if (fullText.StartsWith("Ranking", StringComparison.Ordinal))
+            {
+                return string.Empty;
+            }
+
+            return fullText.TrimEnd();
         }
 
         return fullText[..index].TrimEnd();
@@ -411,52 +417,10 @@ internal static class Program
         }
     }
 
-    private static void RenderStatusBar(ReplayAnalyzer.ReplayProcessResult? lastProcessedResult)
+    private static void PrintShortcutHint(ReplayAnalyzer.ReplayProcessResult? lastProcessedResult)
     {
-        try
-        {
-            if (Console.IsOutputRedirected)
-            {
-                return;
-            }
-
-            var width = Math.Max(20, Console.WindowWidth);
-            var statusRow = Math.Max(0, Console.WindowTop + Console.WindowHeight - 1);
-            var previousLeft = Console.CursorLeft;
-            var previousTop = Console.CursorTop;
-            var lastReplayName = lastProcessedResult is null ? "none" : Path.GetFileName(lastProcessedResult.ReplayFilePath);
-
-            var statusText = $"[L] Last  [R] Reparse all  [D] Details last  [X] Exit | Last: {lastReplayName}";
-            if (statusText.Length > width)
-            {
-                statusText = statusText[..width];
-            }
-
-            var padded = statusText.PadRight(width);
-
-            Console.SetCursorPosition(0, statusRow);
-            var previousFg = Console.ForegroundColor;
-            var previousBg = Console.BackgroundColor;
-            Console.ForegroundColor = ConsoleColor.Black;
-            Console.BackgroundColor = ConsoleColor.DarkGray;
-            Console.Write(padded);
-            Console.ForegroundColor = previousFg;
-            Console.BackgroundColor = previousBg;
-
-            if (previousTop >= statusRow)
-            {
-                previousTop = Math.Max(0, statusRow - 1);
-                previousLeft = 0;
-            }
-
-            var safeLeft = Math.Max(0, Math.Min(previousLeft, Math.Max(0, Console.BufferWidth - 1)));
-            var safeTop = Math.Max(0, Math.Min(previousTop, Math.Max(0, Console.BufferHeight - 1)));
-            Console.SetCursorPosition(safeLeft, safeTop);
-        }
-        catch
-        {
-            // Best-effort UI rendering; keep watcher functional even when cursor APIs are unavailable.
-        }
+        var lastReplayName = lastProcessedResult is null ? "none" : Path.GetFileName(lastProcessedResult.ReplayFilePath);
+        Console.WriteLine($"[L] Last  [R] Reparse all  [D] Details last  [X] Exit | Last: {lastReplayName}");
     }
 
     private static string? TryGetSignature(string filePath)
