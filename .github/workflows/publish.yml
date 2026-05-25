@@ -32,11 +32,31 @@ jobs:
           dotnet restore ./src/ConsoleReader/ConsoleReader.csproj --force
           dotnet restore ./src/ReplayWatcher/ReplayWatcher.csproj --force
 
+      - name: Ensure project extension imports exist
+        shell: pwsh
+        run: |
+          $projectFiles = Get-ChildItem -Path ./src -Recurse -Filter *.csproj
+          foreach ($project in $projectFiles) {
+            $objDir = Join-Path $project.DirectoryName "obj"
+            New-Item -ItemType Directory -Force -Path $objDir | Out-Null
+
+            $propsPath = Join-Path $objDir ("{0}.ci.props" -f $project.Name)
+            $targetsPath = Join-Path $objDir ("{0}.ci.targets" -f $project.Name)
+
+            if (-not (Test-Path $propsPath)) {
+              Set-Content -Path $propsPath -Value "<Project />" -Encoding UTF8
+            }
+
+            if (-not (Test-Path $targetsPath)) {
+              Set-Content -Path $targetsPath -Value "<Project />" -Encoding UTF8
+            }
+          }
+
       - name: Publish ConsoleReader EXE
-        run: dotnet publish ./src/ConsoleReader/ConsoleReader.csproj -c Release -r win-x64 --self-contained true -p:PublishSingleFile=true -p:RestoreForce=true -p:ImportProjectExtensionProps=false -o ./dist/ConsoleReader
+        run: dotnet publish ./src/ConsoleReader/ConsoleReader.csproj -c Release -r win-x64 --self-contained true -p:PublishSingleFile=true --no-restore -o ./dist/ConsoleReader
 
       - name: Publish ReplayWatcher EXE
-        run: dotnet publish ./src/ReplayWatcher/ReplayWatcher.csproj -c Release -r win-x64 --self-contained true -p:PublishSingleFile=true -p:RestoreForce=true -p:ImportProjectExtensionProps=false -o ./dist/ReplayWatcher
+        run: dotnet publish ./src/ReplayWatcher/ReplayWatcher.csproj -c Release -r win-x64 --self-contained true -p:PublishSingleFile=true --no-restore -o ./dist/ReplayWatcher
 
       - name: Upload EXE artifacts
         uses: actions/upload-artifact@v4
