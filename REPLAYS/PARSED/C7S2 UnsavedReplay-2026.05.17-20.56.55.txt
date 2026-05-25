@@ -1,0 +1,124 @@
+File : C7S2 UnsavedReplay-2026.05.17-20.56.55
+Match: 2026-05-17T18:56:55.9800000Z; Duration: 17:44
+       99 Total Players
+       15 Real Players 
+       84 BOTs 
+       25 NPCs
+       Hard Count: Real 15; BOT 84; NPC 25; Sum 124
+Owner: xdx2k7 (634311A416164074906752232C0DC6D2)
+       Rank#: #01
+       killed 9 / knocked 1; 
+       Accuracy 31.9%; Assists 0; Revives 0; Damage: 1457 Given; 280 Received
+Owner Killfeed:
+   1. [05:30] killed!: [BOT ] WowerZower     | Rank: 70
+   2. [07:22] killed!: [BOT ] GlassCannister | Rank: 45
+   3. [08:09] killed!: [BOT ] TheFlopperKing | Rank: 41
+   4. [08:54] killed!: [BOT ] DarioAvaro     | Rank: 33
+   5. [09:19] killed!: [BOT ] IHaveFullMetal | Rank: 27
+   6. [10:31] killed!: [BOT ] CopperBottom43 | Rank: 22
+   7. [10:41] killed!: [BOT ] Mati9915429    | Rank: 19
+   8. [12:07] killed!: [BOT ] xXxjmarcinxXx  | Rank: 10
+   9. [14:18] knocked: [Real] m.c.hastings   | Rank: 6
+  10. [19:31] killed!: [Real] winter_ricskoo | Rank: 2
+
+Ranking
+#01 * xdx2k7                * OWNER * Kills: 10 | Level: 150 (150) | Platform: WIN
+#02 * winter_ricskoo        | Real  | Kills: 10 | Level:  78 ( 78) | Platform: PS5
+#03 * Lord_Elender          | Real  | Kills:  4 | Level: ??? (???) | Platform: PSN
+#04 * Stuey18959            | Real  | Kills:  6 | Level:  71 ( 71) | Platform: XSX
+#05 * Samu_439ns            | Real  | Kills:  3 | Level:  68 ( 68) | Platform: PS5
+#06 * m.c.hastings          | Real  | Kills:  3 | Level: ??? (174) | Platform: SWT2
+#07 | AtTheBeach321         | BOT   | Kills:  0
+#08 | ZeroM4nqueke          | BOT   | Kills:  1
+#09 | 4tnite4ever15         | BOT   | Kills:  2
+#10 | xXxjmarcinxXx         | BOT   | Kills:  3
+#11 | Katil Kene01          | BOT   | Kills:  4
+#12 | ParmesanPeyniri1      | BOT   | Kills:  2
+#13 | GiantDaisy            | BOT   | Kills:  0
+#14 | IronMade20            | BOT   | Kills:  0
+#15 | D0mb1l1P4nd4          | BOT   | Kills:  0
+#16 * chephroshavanega      | Real  | Kills:  4 | Level: ??? (???) | Platform: PSN
+#17 * xs-vex5               | Real  | Kills:  3 | Level:  86 ( 86) | Platform: PS5
+#18 | Bro2Max               | BOT   | Kills:  1
+#19 | Mati9915429           | BOT   | Kills:  3
+#20 | SnipersDelight50      | BOT   | Kills:  1
+#21 | SoFastMan             | BOT   | Kills:  1
+#22 | CopperBottom43        | BOT   | Kills:  0
+#23 | BobbumMan             | BOT   | Kills:  1
+#24 | widze_cie_            | BOT   | Kills:  0
+#25 | SixesAndSevens65      | BOT   | Kills:  0
+#26 | WiggleShark28         | BOT   | Kills:  0
+#27 | IHaveFullMetal        | BOT   | Kills:  1
+#28 * nalc_01               | Real  | Kills:  4 | Level: 161 (161) | Platform: PS5
+#29 | حميد21                | BOT   | Kills:  0
+#30 | MaisVoyonsDont        | BOT   | Kills:  1
+#31 | DJHoneybun            | BOT   | Kills:  1
+#32 | Marasma800            | BOT   | Kills:  1
+#33 | DarioAvaro            | BOT   | Kills:  0
+#34 | IHateBacon35          | BOT   | Kills:  1
+#35 | nabbo8940456          | BOT   | Kills:  1
+#36 * MECTRON228            | Real  | Kills:  4 | Level:  19 ( 19) | Platform: WIN
+#37 | MrPiumPium            | BOT   | Kills:  0
+#38 | xXxwodzuxXx           | BOT   | Kills:  1
+#39 | SimplyKraken          | BOT   | Kills:  0
+#40 | FuzzyPickl3s          | BOT   | Kills:  1
+#41 | TheFlopperKing        | BOT   | Kills:  0
+#42 | MajorYeeter           | BOT   | Kills:  0
+#43 | SquadMaster22         | BOT   | Kills:  0
+#44 | Wondertail            | BOT   | Kills:  0
+#45 | GlassCannister        | BOT   | Kills:  0
+#46 | SuperWygar            | BOT   | Kills:  0
+#47 | TearCollector18       | BOT   | Kills:  0
+#48 | أكمل                  | BOT   | Kills:  1
+#49 | MegaYeet98            | BOT   | Kills:  0
+#50 | bezsensu44            | BOT   | Kills:  1
+#51 | 404Zurco              | BOT   | Kills:  0
+#52 | BobsUrUncle71         | BOT   | Kills:  0
+#53 | Thx4DaLoot14          | BOT   | Kills:  2
+#54 | GalaxyBrain77         | BOT   | Kills:  1
+#55 | PumpkinKnight83       | BOT   | Kills:  0
+#56 | Guacamoldy7           | BOT   | Kills:  1
+#57 | 25_wütende_Affen      | BOT   | Kills:  1
+#58 | ComingForYou19        | BOT   | Kills:  1
+#59 | مكماهون               | BOT   | Kills:  0
+#60 | OgniomistrzJan        | BOT   | Kills:  0
+#61 | Flyingfender          | BOT   | Kills:  0
+#62 * DearKangaroo6773      | Real  | Kills:  2 | Level: ??? (???) | Platform: PSN
+#63 * Mazluvs01             | Real  | Kills:  0 | Level: ??? (???) | Platform: XBL
+#64 | MagicJackie8          | BOT   | Kills:  1
+#65 | boohay2               | BOT   | Kills:  0
+#66 | NoodleSoup83          | BOT   | Kills:  0
+#67 | MatteBest99           | BOT   | Kills:  0
+#68 | Schabolub             | BOT   | Kills:  1
+#69 | MyNameIsHelga15       | BOT   | Kills:  0
+#70 | WowerZower            | BOT   | Kills:  0
+#71 | FuriousBug50          | BOT   | Kills:  0
+#72 | QuantumFig            | BOT   | Kills:  0
+#73 | carbonarapower        | BOT   | Kills:  0
+#74 | BaguetteWarrior11485  | BOT   | Kills:  1
+#75 | BlipBlap53            | BOT   | Kills:  0
+#76 | ريان85                | BOT   | Kills:  0
+#77 | HippoMagician         | BOT   | Kills:  0
+#78 | A_Juke9               | BOT   | Kills:  0
+#79 | GotHeartburn          | BOT   | Kills:  0
+#80 | OrangeTango33         | BOT   | Kills:  0
+#81 | BeefSupreme35         | BOT   | Kills:  0
+#82 | Той_що_в_скалі_сидить | BOT   | Kills:  0
+#83 * uvanlig_oter          | Real  | Kills:  2 | Level: ??? ( 67) | Platform: PS5
+#84 | Soytupadre87202       | BOT   | Kills:  0
+#85 * Lolguardianstreg      | Real  | Kills:  1 | Level: ??? (199) | Platform: WIN
+#86 | NotAPalindrome38      | BOT   | Kills:  0
+#87 | IsBruceHome           | BOT   | Kills:  1
+#88 | FrogTheCat18          | BOT   | Kills:  1
+#89 | Brometheus52          | BOT   | Kills:  1
+#90 | Mouthful95            | BOT   | Kills:  0
+#91 | AbraKadaver01         | BOT   | Kills:  0
+#92 | TwoHitWonder97        | BOT   | Kills:  0
+#93 | Cleopatra30           | BOT   | Kills:  0
+#94 | HollowBrick5          | BOT   | Kills:  0
+#95 * Nikodemx341           | Real  | Kills:  0 | Level: ??? (141) | Platform: WIN
+#96 | Lallamaquellama2      | BOT   | Kills:  0
+#97 | WildCactusBob         | BOT   | Kills:  0
+#98 | SilverBear89          | BOT   | Kills:  0
+#99 | Drimacus7             | BOT   | Kills:  0
+
