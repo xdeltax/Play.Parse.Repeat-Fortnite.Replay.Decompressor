@@ -35,10 +35,24 @@ jobs:
       - name: Publish ReplayWatcher single-file EXE
         run: dotnet publish ./src/ReplayWatcher/ReplayWatcher.csproj -c Release -r win-x64 --self-contained true -p:PublishSingleFile=true -p:IncludeNativeLibrariesForSelfExtract=true -p:EnableCompressionInSingleFile=true -p:RestoreForce=true -p:ImportProjectExtensionProps=false -p:ImportProjectExtensionTargets=false -o ./dist/ReplayWatcher
 
+      - name: Prepare xdx release asset names
+        shell: pwsh
+        run: |
+          $releaseDate = Get-Date -Format "yyyy.MM.dd"
+          $consoleAsset = "$releaseDate - ConsoleReader-xdx.exe"
+          $watcherAsset = "$releaseDate - ReplayWatcher-xdx.exe"
+
+          Move-Item -Path ./dist/ConsoleReader/ConsoleReader.exe -Destination "./dist/$consoleAsset" -Force
+          Move-Item -Path ./dist/ReplayWatcher/ReplayWatcher.exe -Destination "./dist/$watcherAsset" -Force
+
+          "RELEASE_CONSOLE_ASSET=$consoleAsset" | Out-File -FilePath $env:GITHUB_ENV -Encoding utf8 -Append
+          "RELEASE_WATCHER_ASSET=$watcherAsset" | Out-File -FilePath $env:GITHUB_ENV -Encoding utf8 -Append
+
       - name: Create Release
         uses: softprops/action-gh-release@v2
         with:
+          name: "${{ github.ref_name }} xdx"
           generate_release_notes: true
           files: |
-            repo/dist/ConsoleReader/ConsoleReader.exe
-            repo/dist/ReplayWatcher/ReplayWatcher.exe
+            repo/dist/${{ env.RELEASE_CONSOLE_ASSET }}
+            repo/dist/${{ env.RELEASE_WATCHER_ASSET }}

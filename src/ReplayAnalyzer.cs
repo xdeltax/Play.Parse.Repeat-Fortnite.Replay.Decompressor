@@ -149,7 +149,9 @@ internal static class ReplayAnalyzer
         var npcPlayers = players.Count(p => p.IsBot && string.IsNullOrWhiteSpace(p.BotId));
         var crownPlayers = players.Count(p => !p.IsBot && p.HasCrown);
         var hardSum = realPlayers + botPlayers + npcPlayers;
-        var totalPlayers = hardSum;
+        var totalPlayers = replay.TeamStats is not null && replay.TeamStats.TotalPlayers > 0
+            ? (int)replay.TeamStats.TotalPlayers
+            : hardSum;
         static string FormatSummaryLine(string label, string value) => $"{label} {value}";
 
         var lines = new List<string>
@@ -160,6 +162,7 @@ internal static class ReplayAnalyzer
             $"       {realPlayers} Real Players ",
             $"       {botPlayers} BOT Players",
             $"       {npcPlayers} NPCs",
+            $"       {hardSum} in Sum",
             $"       {crownPlayers} {(crownPlayers == 1 ? "Player" : "Players")} with Crown"
         };
 

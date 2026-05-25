@@ -9,9 +9,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Interfaces to support proper DI
 - Register types to be parsed with DI
 
-## [3.0.2] - 2026-05-25
+## [3.0.2-xdx] - 2026-05-25
 ### Changed
 - normalize killfeed and death timestamps by subtracting the warmup lobby offset
+- show `Total Players` from match stats and print player category hard sum as `<n> in Sum`
 
 ## [3.0.1] - 2026-05-16
 ### Changed
