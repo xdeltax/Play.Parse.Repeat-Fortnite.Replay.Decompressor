@@ -1,7 +1,6 @@
-# PLAY.PARSE.ANALYZE.REPEAT
-# Fortnite.Replay.Decompressor
+# PLAY.PARSE.ANALYZE.REPEAT<br/>Fortnite.Replay.Decompressor
 
-Standalone .NET replay parser and exporter for Fortnite replays.
+<b>Standalone .NET Replay Parser And Analyzer For Fortnite Replays (*.replay)</b>
 
 This project was originally forked from [Shiqan/FortniteReplayDecompressor](https://github.com/Shiqan/FortniteReplayDecompressor). The original parser and replay model code still come from that codebase. On top of it, this fork adds a text/JSON export pipeline and console tooling that writes analysis artifacts for each replay.
 
